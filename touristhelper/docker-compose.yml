@@ -2,7 +2,7 @@ version: '3.11'
 
 services:
   django:
-    image: touristhelper2:1.1.1
+    image: touristhelper2:2.2.2
     build: .
     ports:
       - "8351:8350"
