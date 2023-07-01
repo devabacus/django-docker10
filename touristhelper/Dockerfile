@@ -12,6 +12,6 @@ COPY . .
 RUN pip show gunicorn
 
 # CMD [ "python", "manage.py","runserver", "0.0.0.0:8100" ]
-CMD ["gunicorn", "--bind", "0.0.0.0:8350", "touristhelper.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8350", "--reload", "touristhelper.wsgi:application"]
 # CMD ["/bin/bash"]
 
